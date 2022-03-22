@@ -1,0 +1,76 @@
+html {
+  font-size: 100%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Nunito', sans-serif;
+  color: white;
+  background-color: #36393F;
+  display: flex;
+}
+
+aside{
+  width: 20%;
+}
+main{
+  width: 80%;
+}
+section{
+  height: 100vh;
+}
+
+h1{
+  font-size: 3.75rem;
+  width: 60%;
+  text-align: center;
+}
+section.hero{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px red solid;
+}
+section.hero .presentation{
+  width: 12.5rem;
+  height: 12.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #F9DC36;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.hero a{
+  width: auto;
+  height: auto;
+  padding: 1.25rem 2.5rem;
+  background-color: #F9DC36;
+  color: #36393F;
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12rem;
+}
