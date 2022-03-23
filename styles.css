@@ -32,9 +32,49 @@ body {
 
 aside{
   width: 20%;
+  height: 100vh;
+  position: fixed;
+  background-color: #40444B;
+  padding-top: 1.875rem;
+  padding-left: 1.375rem;
+}
+aside .logo{
+  display: flex;
+  gap: 0.938rem;
+  align-items: center;
+}
+
+aside .presentation{
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: #F9DC36;
+  border: none;
+  border-radius: 50%;
+  background-color: #F9DC36;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside h3{
+  font-size: 1.563rem;
+}
+aside ul{
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 0;
+  margin-top: 1.375rem;
+}
+aside ul a{
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 200;
 }
 main{
   width: 80%;
+  margin-left: 20%;
 }
 section{
   height: 100vh;
@@ -44,13 +84,14 @@ h1{
   font-size: 3.75rem;
   width: 60%;
   text-align: center;
+  margin: 0;
 }
 section.hero{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border: 1px red solid;
+  gap: 3.75rem;
 }
 section.hero .presentation{
   width: 12.5rem;
