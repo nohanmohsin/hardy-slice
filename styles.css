@@ -111,7 +111,43 @@ section.hero a{
   background-color: #F9DC36;
   color: #36393F;
   font-size: 1.875rem;
-  font-weight: 600;
+  font-weight: 700;
   text-decoration: none;
   border-radius: 12rem;
+}
+
+section.features{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  text-align: center;
+  gap: 5.5rem;
+}
+
+section.features .container{
+  width: 100%;
+  display: flex;
+
+}
+section.features .feature{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 50%;
+}
+
+section.features .shield{
+  justify-content: center;
+}
+section.features p{
+  width: 60%;
+  font-size: 1.125rem;
+  margin: 0;
+}
+
+section.features h4{
+  font-size: 1.563rem;
+  margin: 0;
 }
