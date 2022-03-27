@@ -151,3 +151,84 @@ section.features h4{
   font-size: 1.563rem;
   margin: 0;
 }
+
+section.command-list{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3.75rem;
+  height: 100%;
+}
+section.command-list h1{
+  width: 100%;
+  text-align: center;
+}
+.accordion {
+  width: 75%;
+  border-radius: 5px;
+  
+  margin-top: 3.75rem;
+  color: #ffffff; 
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.accordion .accordion-item{
+  background: #40444B;
+  border-radius: 5px;
+  width: 100%;
+}
+.accordion__label,
+.accordion__content {
+  padding: 14px 20px;
+}
+
+.accordion__label {
+  display: block;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  position: relative;
+  transition: 0.1s;
+}
+
+.accordion__label:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.accordion__label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 12px;
+  height: 6px;
+  
+  background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23F9DC36;" /></svg>');
+  background-size: contain;
+  transition: transform 0.4s;
+}
+
+.accordion__content {
+  background: #40444B;
+  line-height: 1.6;
+  font-size: 0.85em;
+  display: none;
+  border-radius: 5px;
+}
+
+.accordion__content p{
+  width: 80%;
+}
+.accordion__input {
+  display: none;
+}
+
+.accordion__input:checked ~ .accordion__content {
+  display: block;
+}
+
+.accordion__input:checked ~ .accordion__label::after {
+  transform: translateY(-50%) rotate(0.5turn);
+}
